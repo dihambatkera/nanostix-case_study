@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NanoStix ePortfolio Case Study</title>
+  <meta name="description"
+    content="An award-winning luxury ePortfolio case study exploring how creativity and innovation helped Nanostix solve key business challenges in Malaysia.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Age Verification Modal Overlay -->
+  <div id="ageVerifyOverlay" class="age-verify-overlay active">
+    <div class="age-backdrop-glow"></div>
+    <div class="age-verify-card">
+      <!-- Main Verification View -->
+      <div id="agePromptView" class="age-view-content">
+
+        <h2 class="age-title gradient-title">Welcome to Nanostix Case Study</h2>
+        <p class="age-message">
+          You need to be over 19 to view this website.
+        </p>
+        <p class="age-subtext">
+          This case study ePortfolio contains content regarding Nanostix vape device innovation. Please verify your age to continue.
+        </p>
+        <div class="age-actions">
+          <button id="ageVerifyYes" class="btn-age-yes">
+            <i class="fa-solid fa-circle-check"></i> Verify &amp; Enter (19+)
+          </button>
+          <button id="ageVerifyNo" class="btn-age-no">
+            <i class="fa-solid fa-circle-xmark"></i> No, Under 19
+          </button>
+        </div>
+      </div>
+
+      <!-- Access Denied View -->
+      <div id="ageDeniedView" class="age-view-content age-denied-box" style="display: none;">
+        <div class="age-denied-icon">
+          <i class="fa-solid fa-ban"></i>
+        </div>
+        <h2 class="age-title" style="color: #ef4444;">Access Restricted</h2>
+        <p class="age-message">
+          Sorry! You must be at least 19 years old to access this website.
+        </p>
+        <p class="age-subtext">
+          Access to this ePortfolio remains locked until age criteria is met.
+        </p>
+        <button id="ageRetryBtn" class="btn-age-retry">
+          <i class="fa-solid fa-rotate-left"></i> Re-verify Age
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reading Progress Bar -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Ambient Cursor RGB Spotlight -->
+  <div id="cursorSpotlight"></div>
+
+  <!-- Sticky Floating Glass Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <img src="https://nanostix.co.uk/cdn/shop/files/Logo___Tagline-02_1200x1200.png?v=1647350456"
+          alt="Nanostix Official Logo" class="official-brand-img">
+        <div class="brand-text-block">
+          <span class="brand-title">NANOSTIX</span>
+          <span class="brand-tag">CASE STUDY ePORTFOLIO</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#problem-1" class="nav-link">Problems</a></li>
+          <li><a href="#innovation-process" class="nav-link">Process</a></li>
+          <li><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+          <li><a href="#references" class="nav-link">References</a></li>
+          <li><a href="#student-profile" class="nav-link">Author</a></li>
+        </ul>
+      </nav>
+
+      <a href="#student-profile" class="nav-action-btn">View Author</a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO SECTION (Split Screen + Kinetic 3D Showcase Box)
+       ========================================================================== -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1 class="hero-title gradient-title">Creativity & Innovation in Nanostix</h1>
+        <h2 class="hero-subtitle">How Creativity and Innovation Helped Solve Real Business Challenges</h2>
+        <p class="hero-intro">
+          Nanostix is a Malaysian vape company that produces vape devices and e-liquids. The company focuses on product
+          quality, innovation, and customer safety. As the vape industry continued to grow, Nanostix faced several
+          business challenges including changing regulations, illegal products, safety concerns, and customer
+          expectations. Through creativity and innovation, the company developed new ideas and improved its business
+          operations to overcome these challenges.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#about" class="btn-primary-rgb">Explore Case Study <i class="fa-solid fa-arrow-down-long"></i></a>
+          <a href="#problem-1" class="btn-secondary-glass">Key Business Problems</a>
+        </div>
+      </div>
+
+      <!-- Kinetic 3D Showcase Card -->
+      <div class="hero-showcase-box">
+        <div class="showcase-badge-pill">OFFICIAL BRAND SHOWCASE</div>
+        <div class="hero-image-placeholder">
+          <img src="assets/1.png" alt="Nanostix R&D Innovation Showcase" class="showcase-img-asset">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: ABOUT NANOSTIX (Modular Tech Bento Grid)
+       ========================================================================== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header" style="text-align: center;">
+        <h2 class="section-title gradient-title" style="font-size: 2.8rem;">About Nanostix</h2>
+        <p style="color: var(--text-secondary); max-width: 650px; margin: 0.5rem auto 0 auto; font-size: 1.1rem;">
+          Pioneering quality, safety, and modern e-liquid technologies in Malaysia.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Card 1: Key Specifications (Bento Span 1) -->
+        <div class="bento-card">
+          <div class="bento-icon-header"><i class="fa-solid fa-building bento-fa-icon"></i></div>
+          <h3 class="bento-title">Corporate Profile</h3>
+          <div class="specs-bento-list">
+            <div class="spec-row">
+              <span class="spec-key">Company Name</span>
+              <span class="spec-val" style="color: var(--rgb-purple);">Nanostix</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Industry</span>
+              <span class="spec-val">Vape & E-Liquid Manufacturing</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Country</span>
+              <span class="spec-val">Malaysia</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Target Customers</span>
+              <span class="spec-val" style="font-size: 0.85rem;">Adult smokers seeking alternatives</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Mission & Core Offerings (Bento Span 2) -->
+        <div class="bento-card span-2-col">
+          <div class="bento-icon-header"><i class="fa-solid fa-bullseye bento-fa-icon"></i></div>
+          <h3 class="bento-title">Mission & Products</h3>
+          <p class="bento-desc" style="margin-bottom: 1.25rem;">
+            To develop innovative vape products while promoting product safety, quality, and responsible industry
+            practices.
+          </p>
+          <div style="margin-bottom: 1rem;">
+            <span class="spec-key" style="display: block; margin-bottom: 6px;">Product Ecosystem:</span>
+            <div class="product-tags-wrapper">
+              <span class="product-chip">Disposable Vape Devices</span>
+              <span class="product-chip">Pod Systems</span>
+              <span class="product-chip">E-Liquids</span>
+              <span class="product-chip">NanoNIC Salt Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Detailed Description & R&D Cleanroom Visual (Bento Span 3 Full Width) -->
+        <div class="bento-card span-2-col" style="grid-column: span 3;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+            <div>
+              <div class="bento-icon-header"><i class="fa-solid fa-flask-vial bento-fa-icon"></i></div>
+              <h3 class="bento-title">Company Description</h3>
+              <p class="bento-desc">
+                Nanostix is one of Malaysia's growing vape brands. The company invests in research, product development,
+                and safety improvements while supporting better regulations for the vape industry.
+              </p>
+            </div>
+            <div class="hero-image-placeholder">
+              <img src="assets/2.jpg" alt="Nanostix Automated R&D Cleanroom Facility" class="showcase-img-asset">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: PROBLEM 01 (Magazine Editorial Layout)
+       ========================================================================== -->
+  <section id="problem-1">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title gradient-title" style="font-size: 2.8rem;">Key Business Challenges</h2>
+      </div>
+
+      <div class="problem-magazine-layout">
+        <div>
+          <h3 style="font-size: 2.2rem; margin-bottom: 1rem;" class="gradient-title">Problem 01: Undang-undang Berkaitan Vape Perlu Diselaraskan – Nanostix</h3>
+
+          <p style="color: var(--text-secondary); font-size: 1.08rem; line-height: 1.7;">
+            <strong>Introduction:</strong> Different states in Malaysia enforce varying vape regulations, creating legal
+            ambiguity and operational confusion for legitimate vape companies.
+          </p>
+
+          <blockquote class="editorial-pull-quote">
+            "Vape laws in Malaysia need urgent standardization across all states to eliminate confusion and protect
+            legal industry stakeholders."
+          </blockquote>
+
+          <div class="problem-content-block">
+            <h4>How The Problem Was Identified</h4>
+            <p>Nanostix observed that inconsistent local council and state-level directives created business uncertainty
+              across different regions in Malaysia.</p>
+          </div>
+
+          <div class="problem-content-block" style="border-left: 3px solid var(--rgb-green);">
+            <h4 style="color: #00B882;">Creative & Innovative Solution</h4>
+            <p>Nanostix advocated for a single nationwide legal framework, partnering with industry chambers to push for
+              standardized federal regulations.</p>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <h4
+              style="font-family: var(--font-mono); font-size: 0.82rem; text-transform: uppercase; color: var(--text-primary); letter-spacing: 0.1em; margin-bottom: 0.5rem;">
+              Key Benefits Achieved</h4>
+            <ul class="benefits-checklist">
+              <li>Standardized national regulatory compliance</li>
+              <li>Clear operational guidelines for distributors</li>
+              <li>Increased investment and market stability</li>
+              <li>Protection of legitimate businesses against ambiguity</li>
+            </ul>
+          </div>
+
+          <!-- Official Source Link Glass Card -->
+          <div class="official-source-card">
+            <div>
+              <span class="source-label">Official Source Link (Kosmo! Online)</span>
+              <span class="source-url">kosmo.com.my / undang-undang-berkaitan-vape-perlu-diselaraskan-nanostix</span>
+            </div>
+            <a href="https://www.kosmo.com.my/2025/05/12/undang-undang-berkaitan-vape-perlu-diselaraskan-nanostix/"
+              target="_blank" rel="noopener noreferrer" class="visit-source-btn">Visit Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-image-placeholder">
+          <img src="assets/3.jpeg" alt="Vape Regulation Standardization in Malaysia" class="showcase-img-asset">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: PROBLEM 02 (Diagonal Split & Anti-Counterfeit Focus Layout)
+       ========================================================================== -->
+  <section id="problem-2" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="problem-diagonal-layout">
+        <div class="diagonal-grid">
+          <div>
+            <h3 style="font-size: 2.2rem; margin-bottom: 1rem;" class="gradient-title">Problem 02: Sustained Crackdown Needed to Dismantle Underground Vape</h3>
+
+            <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.25rem;">
+              <strong>Introduction:</strong> Illegal vape products and underground syndicates endanger consumer safety
+              and bypass health standards.
+            </p>
+
+            <div class="problem-content-block">
+              <h4>Problem</h4>
+              <p>Unregulated counterfeit devices entered the market without safety certifications or lab testing.</p>
+            </div>
+
+            <div class="problem-content-block">
+              <h4>How The Problem Was Identified</h4>
+              <p>Intelligence investigations and law enforcement reports revealed illicit products distributed through
+                unvetted channels.</p>
+            </div>
+
+            <div class="problem-content-block" style="border-left: 3px solid var(--rgb-orange);">
+              <h4 style="color: var(--rgb-orange);">Creative & Innovative Solution</h4>
+              <p>Nanostix urged sustained intelligence-led government enforcement while integrating secure QR-code
+                authentication on all packaging.</p>
+            </div>
+
+            <div>
+              <h4
+                style="font-family: var(--font-mono); font-size: 0.82rem; text-transform: uppercase; color: var(--text-primary); letter-spacing: 0.1em; margin-bottom: 0.5rem;">
+                Key Benefits Achieved</h4>
+              <ul class="benefits-checklist">
+                <li>Guaranteed authentic product safety for users</li>
+                <li>Dismantling of illegal counterfeit networks</li>
+                <li>Strengthened consumer trust and brand integrity</li>
+                <li>Alignment with law enforcement initiatives</li>
+              </ul>
+            </div>
+
+            <!-- Official Source Link Glass Card -->
+            <div class="official-source-card">
+              <div>
+                <span class="source-label">Official Source Link (New Straits Times)</span>
+                <span class="source-url">nst.com.my / crackdown-needed-dismantle-underground-vape</span>
+              </div>
+              <a href="https://www.nst.com.my/news/nation/2026/05/1451450/sustained-intelligence-led-crackdown-needed-dismantle-underground-vape"
+                target="_blank" rel="noopener noreferrer" class="visit-source-btn">Visit Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="hero-image-placeholder">
+            <img src="assets/4.jpg" alt="Underground Vape & Anti-Counterfeit Crackdown" class="showcase-img-asset">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: PROBLEM 03 (Overlapping Floating Card Stack Layout)
+       ========================================================================== -->
+  <section id="problem-3">
+    <div class="container">
+      <div class="problem-floating-stack">
+        <div class="floating-stack-cards">
+          <h3 style="font-size: 2.2rem; margin-bottom: 1rem;" class="gradient-title">Problem 03: Battery Safety & Global Standards</h3>
+          <div class="stack-card">
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+              <strong>Introduction:</strong> Global regulatory updates and international news highlighted the critical
+              role of battery safety and certified manufacturing standards for consumer protection.
+            </p>
+          </div>
+
+          <div class="stack-card" style="border-left: 4px solid var(--rgb-green);">
+            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: #00B882; margin-bottom: 0.4rem;">
+              Creative SIRIM Solution</h4>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+              Nanostix implemented SIRIM certified battery management systems and overcharge protection circuits to
+              eliminate thermal hazards.
+            </p>
+          </div>
+
+          <div class="stack-card">
+            <h4
+              style="font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; color: var(--text-primary); margin-bottom: 0.4rem;">
+              Measurable Outcomes</h4>
+            <ul class="benefits-checklist">
+              <li>Certified SIRIM battery safety compliance</li>
+              <li>Elimination of thermal surge hazards</li>
+              <li>Higher global consumer confidence</li>
+            </ul>
+          </div>
+
+          <!-- Official Source Link Glass Card 1 (BBC News) -->
+          <div class="official-source-card">
+            <div>
+              <span class="source-label">Official Source Link 1 (BBC News)</span>
+              <span class="source-url">bbc.com / news / articles / c8r2e4nle23o</span>
+            </div>
+            <a href="https://www.bbc.com/news/articles/c8r2e4nle23o" target="_blank" rel="noopener noreferrer"
+              class="visit-source-btn">Visit Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+
+          <!-- Official Source Link Glass Card 2 (Kosmo! SIRIM Collaboration) -->
+          <div class="official-source-card" style="margin-top: 0.75rem;">
+            <div>
+              <span class="source-label">Official Source Link 2 (Kosmo! Online)</span>
+              <span class="source-url">kosmo.com.my / kerjasama-nanostix-sirim-hasilkan-peranti-selamat</span>
+            </div>
+            <a href="https://www.kosmo.com.my/2022/04/27/kerjasama-nanostix-sirim-hasilkan-peranti-selamat/" target="_blank" rel="noopener noreferrer"
+              class="visit-source-btn">Visit Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="problem-3-media-column">
+          <div class="hero-image-placeholder">
+            <img src="assets/5.jpg" alt="SIRIM Certified Battery Safety Benchmark"
+              class="showcase-img-asset small-showcase-img">
+          </div>
+
+          <div class="hero-image-placeholder" style="margin-top: 1.5rem;">
+            <span class="source-label"
+              style="display: block; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.8rem; font-weight: 700; font-family: var(--font-mono);"></span>
+            <img src="assets/sirim.jpg" alt="SIRIM Quality Compliance Document" class="document-img-asset">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: PROBLEM 04 (Dashboard Telemetry Grid Layout)
+       ========================================================================== -->
+  <section id="problem-4" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="problem-dashboard-layout">
+        <div class="dashboard-header-bar">
+          <div>
+            <h3 style="font-size: 2.2rem;" class="gradient-title">Problem 04: State Vape Bans Causing Confusion</h3>
+          </div>
+          <span
+            style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--rgb-purple);">FMT
+            INDUSTRY INSIGHT</span>
+        </div>
+
+        <div class="dashboard-grid">
+          <div>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.25rem;">
+              <strong>Introduction:</strong> Uncoordinated state vape bans and conflicting local council policies create
+              widespread confusion among consumers and retailers.
+            </p>
+
+            <div class="problem-content-block">
+              <h4>How The Problem Was Identified</h4>
+              <p>Industry players pointed out that state-by-state bans created cross-border legal confusion and hindered
+                legitimate business operations.</p>
+            </div>
+
+            <div class="problem-content-block" style="border-left: 3px solid var(--rgb-purple);">
+              <h4 style="color: var(--rgb-purple);">Creative & Innovative Solution</h4>
+              <p>Nanostix engaged with policy makers to advocate for unified federal regulations, ensuring clear
+                compliance guidelines nationwide.</p>
+            </div>
+
+            <div>
+              <h4
+                style="font-family: var(--font-mono); font-size: 0.82rem; text-transform: uppercase; color: var(--text-primary); letter-spacing: 0.1em; margin-bottom: 0.5rem;">
+                Key Benefits Achieved</h4>
+              <ul class="benefits-checklist">
+                <li>Reduced legal confusion across state borders</li>
+                <li>Protection for legitimate retail networks</li>
+                <li>Transparent policy dialogs with federal authorities</li>
+              </ul>
+            </div>
+
+            <!-- Official Source Link Glass Card -->
+            <div class="official-source-card">
+              <div>
+                <span class="source-label">Official Source Link (Free Malaysia Today)</span>
+                <span class="source-url">freemalaysiatoday.com / state-vape-bans-causing-confusion</span>
+              </div>
+              <a href="https://www.freemalaysiatoday.com/category/nation/2025/05/12/state-vape-bans-causing-confusion-says-industry-player"
+                target="_blank" rel="noopener noreferrer" class="visit-source-btn">Visit Source ↗</a>
+            </div>
+          </div>
+
+          <div class="telemetry-metrics-box">
+
+            <div class="hero-image-placeholder">
+              <img src="assets/6.jpg" alt="State Vape Regulations & Monitoring System" class="showcase-img-asset">
+            </div>
+
+            <div class="hero-image-placeholder" style="margin-top: 1.5rem;">
+              <span class="source-label"
+                style="display: block; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.8rem; font-weight: 700; font-family: var(--font-mono);"></span>
+              <img src="assets/document.jpeg" alt="Official State Vape Policy Document" class="document-img-asset">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: PROBLEM 05 (Interactive Panel & Accordion Showcase Layout)
+       ========================================================================== -->
+  <section id="problem-5">
+    <div class="container">
+      <div class="problem-interactive-panels">
+        <div class="panels-grid">
+          <div>
+            <h3 style="font-size: 2.3rem; margin-bottom: 1rem;" class="gradient-title">Problem 05: Excise Duty on Vape
+              Liquids The Way Forward</h3>
+
+            <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.25rem;">
+              <strong>Introduction:</strong> Before formal taxation, unregulated vape liquids entered the market without
+              safety oversight or tax contributions. Industry leaders highlighted excise duty as the crucial way forward
+              to regulate the sector.
+            </p>
+
+            <div class="problem-content-block">
+              <h4>Problem</h4>
+              <p>Absence of a structured excise duty framework allowed uncertified e-liquids to circulate without
+                government tax compliance or lab safety testing.</p>
+            </div>
+
+            <div class="problem-content-block">
+              <h4>How The Problem Was Identified</h4>
+              <p>Industry reports from Free Malaysia Today demonstrated that formal excise duty implementation would
+                separate legitimate tax-compliant manufacturers from illicit traders.</p>
+            </div>
+
+            <div class="problem-content-block" style="border-left: 3px solid var(--rgb-pink);">
+              <h4 style="color: var(--rgb-pink);">Creative & Innovative Solution</h4>
+              <p>Nanostix actively supported government excise duty initiatives, upgrading production facilities to meet
+                official tax banderole and SIRIM safety requirements.</p>
+            </div>
+
+            <div>
+              <h4
+                style="font-family: var(--font-mono); font-size: 0.82rem; text-transform: uppercase; color: var(--text-primary); letter-spacing: 0.1em; margin-bottom: 0.5rem;">
+                Key Benefits Achieved</h4>
+              <ul class="benefits-checklist">
+                <li>Fair government taxation revenue generation</li>
+                <li>Formal industry legalization and standard oversight</li>
+                <li>Strict lab-tested e-liquid quality compliance</li>
+                <li>Elimination of untaxed contraband vape liquids</li>
+              </ul>
+            </div>
+
+            <!-- Official Source Link Glass Card -->
+            <div class="official-source-card">
+              <div>
+                <span class="source-label">Official Source Link (Free Malaysia Today)</span>
+                <span class="source-url">freemalaysiatoday.com / excise-duty-on-vape-liquids-the-way-forward</span>
+              </div>
+              <a href="https://www.freemalaysiatoday.com/category/nation/2021/11/12/excise-duty-on-vape-liquids-the-way-forward-says-industry-player"
+                target="_blank" rel="noopener noreferrer" class="visit-source-btn">Visit Source ↗</a>
+            </div>
+          </div>
+
+          <div class="hero-image-placeholder">
+            <img src="assets/7.png" alt="Excise Duty Framework & Next-Gen Liquids" class="showcase-img-asset">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: INNOVATION PROCESS (7-Step Stepper & Path)
+       ========================================================================== -->
+  <section id="innovation-process" class="process-section">
+    <div class="container">
+      <div class="section-header" style="text-align: center;">
+        <h2 class="section-title gradient-title" style="font-size: 2.8rem;">Innovation Process</h2>
+        <p style="color: var(--text-secondary); max-width: 650px; margin: 0.5rem auto 0 auto; font-size: 1.1rem;">
+          An end-to-end continuous improvement cycle driven by market insights and user safety.
+        </p>
+      </div>
+
+      <div class="stepper-container">
+        <!-- Connecting Flow Line -->
+        <div class="stepper-flow-line">
+          <div class="stepper-flow-progress"></div>
+        </div>
+
+        <div class="stepper-grid">
+          <!-- Step 1 -->
+          <div class="step-node-card">
+            <div class="step-badge-number"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h4 class="step-node-title">1. Identify Problem</h4>
+          </div>
+          <!-- Step 2 -->
+          <div class="step-node-card">
+            <div class="step-badge-number"><i class="fa-solid fa-users-viewfinder"></i></div>
+            <h4 class="step-node-title">2. Research Needs</h4>
+          </div>
+          <!-- Step 3 -->
+          <div class="step-node-card">
+            <div class="step-badge-number"><i class="fa-solid fa-lightbulb"></i></div>
+            <h4 class="step-node-title">3. Brainstorming</h4>
+          </div>
+          <!-- Step 4 -->
+          <div class="step-node-card">
+            <div class="step-badge-number"><i class="fa-solid fa-gear"></i></div>
+            <h4 class="step-node-title">4. R&D Solutions</h4>
+          </div>
+          <!-- Step 5 -->
+          <div class="step-node-card">
+            <div class="step-badge-number"><i class="fa-solid fa-vial-circle-check"></i></div>
+            <h4 class="step-node-title">5. Safety Testing</h4>
+          </div>
+          <!-- Step 6 -->
+          <div class="step-node-card">
+            <div class="step-badge-number"><i class="fa-solid fa-rocket"></i></div>
+            <h4 class="step-node-title">6. Implementation</h4>
+          </div>
+          <!-- Step 7 -->
+          <div class="step-node-card">
+            <div class="step-badge-number" style="border-color: var(--rgb-green); color: var(--rgb-green);"><i
+                class="fa-solid fa-arrows-spin"></i></div>
+            <h4 class="step-node-title">7. Optimization</h4>
+          </div>
+        </div>
+
+        <!-- Generated Innovation Process SVG Graphic -->
+        <div class="timeline-illustration-container">
+          <svg viewBox="0 0 1000 240" class="svg-white-placeholder" xmlns="http://www.w3.org/2000/svg"
+            style="background:#FFFFFF; border-radius: var(--radius-md);">
+            <defs>
+              <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#00D9FF" />
+                <stop offset="50%" stop-color="#7A5CFF" />
+                <stop offset="100%" stop-color="#00FFB3" />
+              </linearGradient>
+            </defs>
+            <rect width="1000" height="240" rx="16" fill="#F8FAFC" />
+            <!-- Wave path -->
+            <path d="M 60 120 C 180 40, 320 200, 450 120 C 580 40, 720 200, 850 120 L 940 120" fill="none"
+              stroke="url(#flowGrad)" stroke-width="5" stroke-dasharray="10 5" />
+            <!-- Nodes -->
+            <circle cx="90" cy="100" r="22" fill="#FFFFFF" stroke="#00D9FF" stroke-width="3" />
+            <text x="90" y="105" text-anchor="middle" fill="#00D9FF" font-family="Orbitron" font-weight="bold"
+              font-size="12">01</text>
+
+            <circle cx="230" cy="70" r="22" fill="#FFFFFF" stroke="#00D9FF" stroke-width="3" />
+            <text x="230" y="75" text-anchor="middle" fill="#00D9FF" font-family="Orbitron" font-weight="bold"
+              font-size="12">02</text>
+
+            <circle cx="370" cy="150" r="22" fill="#FFFFFF" stroke="#7A5CFF" stroke-width="3" />
+            <text x="370" y="155" text-anchor="middle" fill="#7A5CFF" font-family="Orbitron" font-weight="bold"
+              font-size="12">03</text>
+
+            <circle cx="510" cy="80" r="22" fill="#FFFFFF" stroke="#7A5CFF" stroke-width="3" />
+            <text x="510" y="85" text-anchor="middle" fill="#7A5CFF" font-family="Orbitron" font-weight="bold"
+              font-size="12">04</text>
+
+            <circle cx="650" cy="160" r="22" fill="#FFFFFF" stroke="#FF3CAC" stroke-width="3" />
+            <text x="650" y="165" text-anchor="middle" fill="#FF3CAC" font-family="Orbitron" font-weight="bold"
+              font-size="12">05</text>
+
+            <circle cx="790" cy="90" r="22" fill="#FFFFFF" stroke="#FF3CAC" stroke-width="3" />
+            <text x="790" y="95" text-anchor="middle" fill="#FF3CAC" font-family="Orbitron" font-weight="bold"
+              font-size="12">06</text>
+
+            <circle cx="920" cy="120" r="26" fill="#00FFB3" stroke="#FFFFFF" stroke-width="4" />
+            <text x="920" y="125" text-anchor="middle" fill="#FFFFFF" font-family="Orbitron" font-weight="900"
+              font-size="13">07</text>
+
+            <!-- Bottom Flow Legend -->
+            <text x="500" y="215" text-anchor="middle" fill="#111111" font-weight="bold" font-size="13"
+              font-family="Space Grotesk">NANOSTIX CONTINUOUS INNOVATION & R&D CYCLE</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 9: BENEFITS (3D Holographic Floating Glass Cards)
+       ========================================================================== -->
+  <section id="benefits">
+    <div class="container">
+      <div class="section-header" style="text-align: center;">
+        <h2 class="section-title gradient-title" style="font-size: 2.8rem;">Benefits of Creativity & Innovation</h2>
+        <p style="color: var(--text-secondary); max-width: 650px; margin: 0.5rem auto 0 auto; font-size: 1.1rem;">
+          How strategic innovation delivers measurable value for Nanostix and its customers.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <!-- Benefit 1 -->
+        <div class="benefit-hologram-card">
+          <div class="benefit-icon-badge"><i class="fa-solid fa-shield-halved benefit-fa-icon"></i></div>
+          <h3 class="benefit-card-title">Improved Product Safety</h3>
+          <p class="benefit-card-desc">Certified SIRIM standards and quality-tested battery cells reduce hazards.</p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="benefit-hologram-card">
+          <div class="benefit-icon-badge"><i class="fa-solid fa-handshake-simple benefit-fa-icon"></i></div>
+          <h3 class="benefit-card-title">Better Customer Trust</h3>
+          <p class="benefit-card-desc">Authentic certified products build user confidence against counterfeits.</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="benefit-hologram-card">
+          <div class="benefit-icon-badge"><i class="fa-solid fa-chart-line benefit-fa-icon"></i></div>
+          <h3 class="benefit-card-title">Business Growth</h3>
+          <p class="benefit-card-desc">Clear regulatory alignment opens sustainable long-term expansion opportunities.
+          </p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="benefit-hologram-card">
+          <div class="benefit-icon-badge"><i class="fa-solid fa-lightbulb benefit-fa-icon"></i></div>
+          <h3 class="benefit-card-title">Industry Innovation</h3>
+          <p class="benefit-card-desc">Setting higher R&D benchmarks across Malaysian vape manufacturers.</p>
+        </div>
+
+        <!-- Benefit 5 -->
+        <div class="benefit-hologram-card">
+          <div class="benefit-icon-badge"><i class="fa-solid fa-award benefit-fa-icon"></i></div>
+          <h3 class="benefit-card-title">Product Quality</h3>
+          <p class="benefit-card-desc">Next-gen pod systems with superior flavor delivery and battery life.</p>
+        </div>
+
+        <!-- Benefit 6 -->
+        <div class="benefit-hologram-card">
+          <div class="benefit-icon-badge"><i class="fa-solid fa-trophy benefit-fa-icon"></i></div>
+          <h3 class="benefit-card-title">Competitive Advantage</h3>
+          <p class="benefit-card-desc">Leading market reputation through proactive compliance and safety.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 10: CONCLUSION (Minimalist Keynote Banner)
+       ========================================================================== -->
+  <section id="conclusion" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="conclusion-keynote-card">
+        <h2 class="section-title gradient-title" style="font-size: 2.8rem; margin-bottom: 1.5rem;">Conclusion</h2>
+        <p class="keynote-text">
+          Nanostix demonstrates how creativity and innovation can solve real business challenges. By improving products,
+          supporting better regulations, encouraging safety standards, and responding to customer needs, the company
+          strengthened its position in the Malaysian vape industry. This case shows that creative thinking and
+          innovation are important for long-term business success.
+        </p>
+        <div class="showcase-badge-pill" style="position: static; display: inline-block;">SUSTAINABLE INDUSTRY
+          LEADERSHIP</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 11: REFERENCES (All 5 News Sources Directory Grid)
+       ========================================================================== -->
+  <section id="references">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title gradient-title" style="font-size: 2.5rem;">References</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem;">Official news articles and documentation referenced
+          in this case study.</p>
+      </div>
+
+      <div class="references-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <!-- Reference 1: Kosmo -->
+        <div class="reference-spec-card">
+          <div class="ref-details-content">
+            <div class="ref-meta-bar">
+              <span class="ref-source-badge">SOURCE 01</span>
+              <span class="ref-publisher">Kosmo! Online (2025)</span>
+            </div>
+            <h4>Undang-undang Berkaitan Vape Perlu Diselaraskan – Nanostix</h4>
+            <p>Calls for unified vape regulations across all Malaysian states to eliminate operational confusion.</p>
+            <a href="https://www.kosmo.com.my/2025/05/12/undang-undang-berkaitan-vape-perlu-diselaraskan-nanostix/"
+              target="_blank" rel="noopener noreferrer" class="visit-source-btn">Visit Source <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Reference 2: NST -->
+        <div class="reference-spec-card">
+          <div class="ref-details-content">
+            <div class="ref-meta-bar">
+              <span class="ref-source-badge">SOURCE 02</span>
+              <span class="ref-publisher">New Straits Times (2026)</span>
+            </div>
+            <h4>Sustained Crackdown Needed to Dismantle Underground Vape</h4>
+            <p>Sustained intelligence-led crackdown needed to dismantle underground vape market and counterfeit
+              products.</p>
+            <a href="https://www.nst.com.my/news/nation/2026/05/1451450/sustained-intelligence-led-crackdown-needed-dismantle-underground-vape"
+              target="_blank" rel="noopener noreferrer" class="visit-source-btn">Visit Source <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Reference 3: BBC -->
+        <div class="reference-spec-card">
+          <div class="ref-details-content">
+            <div class="ref-meta-bar">
+              <span class="ref-source-badge">SOURCE 03</span>
+              <span class="ref-publisher">BBC News</span>
+            </div>
+            <h4>Global Vape Safety & Regulation Benchmark Standards</h4>
+            <p>Global regulatory developments, youth protection policies, and international vape hardware safety
+              standards.</p>
+            <a href="https://www.bbc.com/news/articles/c8r2e4nle23o" target="_blank" rel="noopener noreferrer"
+              class="visit-source-btn">Visit Source <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Reference 4: FMT State Bans -->
+        <div class="reference-spec-card">
+          <div class="ref-details-content">
+            <div class="ref-meta-bar">
+              <span class="ref-source-badge">SOURCE 04</span>
+              <span class="ref-publisher">Free Malaysia Today (2025)</span>
+            </div>
+            <h4>State Vape Bans Causing Confusion, Says Industry Player</h4>
+            <p>State vape bans causing confusion among industry players and consumers. Urges harmonious federal
+              framework.</p>
+            <a href="https://www.freemalaysiatoday.com/category/nation/2025/05/12/state-vape-bans-causing-confusion-says-industry-player"
+              target="_blank" rel="noopener noreferrer" class="visit-source-btn">Visit Source <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Reference 5: FMT Excise Duty -->
+        <div class="reference-spec-card">
+          <div class="ref-details-content">
+            <div class="ref-meta-bar">
+              <span class="ref-source-badge">SOURCE 05</span>
+              <span class="ref-publisher">Free Malaysia Today (2021)</span>
+            </div>
+            <h4>Excise Duty on Vape Liquids The Way Forward, Says Industry Player</h4>
+            <p>Excise duty on vape liquids the way forward. Regulating vape liquids through taxation and SIRIM quality standards.</p>
+            <a href="https://www.freemalaysiatoday.com/category/nation/2021/11/12/excise-duty-on-vape-liquids-the-way-forward-says-industry-player"
+              target="_blank" rel="noopener noreferrer" class="visit-source-btn">Visit Source <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Reference 6: Kosmo SIRIM Collaboration -->
+        <div class="reference-spec-card">
+          <div class="ref-details-content">
+            <div class="ref-meta-bar">
+              <span class="ref-source-badge">SOURCE 06</span>
+              <span class="ref-publisher">Kosmo! Online (2022)</span>
+            </div>
+            <h4>Kerjasama Nanostix, SIRIM Hasilkan Peranti Selamat</h4>
+            <p>Partnership between Nanostix and SIRIM QAS International to manufacture certified safe vape hardware standards.</p>
+            <a href="https://www.kosmo.com.my/2022/04/27/kerjasama-nanostix-sirim-hasilkan-peranti-selamat/"
+              target="_blank" rel="noopener noreferrer" class="visit-source-btn">Visit Source <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 12: REVAMPED AUTHOR PROFILE
+       ========================================================================== -->
+  <section id="student-profile" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="profile-card-hologram">
+        <div class="profile-layout-grid">
+          <!-- Avatar Column -->
+          <div class="profile-avatar-column">
+            <div class="profile-avatar-frame">
+              <img src="assets/me.jpg" alt="Author Profile Picture" class="profile-user-avatar">
+            </div>
+            <div class="author-name-badge">
+              <h2 id="studentName" class="gradient-title" style="font-size: 2.4rem;">Mujahid</h2>
+              <span class="author-role-title"><i class="fa-solid fa-user-gear"></i> Just a student.</span>
+            </div>
+          </div>
+
+          <!-- Info Details Column -->
+          <div class="profile-info-column">
+            <div class="profile-fields-grid">
+              <div class="field-cell">
+                <span class="field-label"><i class="fa-solid fa-phone"></i> Phone Number</span>
+                <span id="studentPhone" class="field-value">0105047072</span>
+              </div>
+
+              <div class="field-cell">
+                <span class="field-label"><i class="fa-solid fa-envelope"></i> Student Email</span>
+                <span id="studentEmail" class="field-value"
+                  style="font-size: 0.88rem;">s251574862@studentmail.unimap.edu.my</span>
+              </div>
+
+              <div class="field-cell">
+                <span class="field-label"><i class="fa-solid fa-location-dot"></i> Address / Origin</span>
+                <span id="studentAddress" class="field-value">Rawang, Selangor</span>
+              </div>
+
+              <div class="field-cell">
+                <span class="field-label"><i class="fa-solid fa-cake-candles"></i> Date of Birth</span>
+                <span id="studentDob" class="field-value">12th May</span>
+              </div>
+
+              <div class="field-cell">
+                <span class="field-label"><i class="fa-solid fa-graduation-cap"></i> Course</span>
+                <span id="studentCourse" class="field-value">Bachelor of Interactive Media Technology</span>
+              </div>
+
+              <div class="field-cell">
+                <span class="field-label"><i class="fa-solid fa-building-columns"></i> Faculty</span>
+                <span id="studentFaculty" class="field-value">Faculty of Business and Communication</span>
+              </div>
+
+              <div class="field-cell bio-cell" style="grid-column: span 2;">
+                <span class="field-label"><i class="fa-solid fa-university"></i> University</span>
+                <span id="studentUni" class="field-value">Universiti Malaysia Perlis (UniMAP)</span>
+              </div>
+            </div>
+
+            <!-- Famous Real Person Life Quote Block -->
+            <div class="life-quote-card">
+              <span class="quote-icon">“</span>
+              <p class="quote-text">Innovation distinguishes between a leader and a follower.</p>
+              <span class="quote-author">— Steve Jobs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p> &copy 2026 Developed by <a href="https://dihambatkera.github.io/ahmdmjhd/" >dihambatkera</a> . Developed for Universiti Malaysia Perlis (UniMAP).</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Overlay -->
+  <div id="lightboxModal" class="modal-overlay">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">✕</button>
+      <img id="modalImage" src="" alt="Enlarged Image View">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
